@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\administrator\\Documents\\Projetos\\Estoque\\Estoque.csproj": {}
+    "C:\\Users\\administrator\\Documents\\Projetos\\Estoque\\Estoque.csproj": {}
   },
   "projects": {
-    "c:\\Users\\administrator\\Documents\\Projetos\\Estoque\\Estoque.csproj": {
+    "C:\\Users\\administrator\\Documents\\Projetos\\Estoque\\Estoque.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\administrator\\Documents\\Projetos\\Estoque\\Estoque.csproj",
+        "projectUniqueName": "C:\\Users\\administrator\\Documents\\Projetos\\Estoque\\Estoque.csproj",
         "projectName": "Estoque",
-        "projectPath": "c:\\Users\\administrator\\Documents\\Projetos\\Estoque\\Estoque.csproj",
+        "projectPath": "C:\\Users\\administrator\\Documents\\Projetos\\Estoque\\Estoque.csproj",
         "packagesPath": "C:\\Users\\administrator\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\administrator\\Documents\\Projetos\\Estoque\\obj\\",
+        "outputPath": "C:\\Users\\administrator\\Documents\\Projetos\\Estoque\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
