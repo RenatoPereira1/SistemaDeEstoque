@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    grid();
+    grid(), gridEstoque();
 });
 
 function cadastrar() {
@@ -52,6 +52,25 @@ function grid() {
                 
                 
                 $('#grid').append(linha);
+            }
+        })
+        .fail(function(erro, mensagem, excecao) { 
+            alert("Erro ao consultar a API!");
+        });
+}
+
+function gridEstoque() {
+    $.get('https://localhost:5001/Estoquer/Listar')
+        .done(function(resposta) { 
+            for(i = 0; i < resposta.length; i++) {                
+                let linha = $('<tr class="text-center"></tr>');
+                
+                linha.append($('<td></td>').html(resposta[i].codigoProduto));
+                linha.append($('<td></td>').html(resposta[i].qtde));
+                linha.append($('<td></td>').html(resposta[i].valorUnitario));
+                
+                 
+                $('#gridEstoque').append(linha);
             }
         })
         .fail(function(erro, mensagem, excecao) { 

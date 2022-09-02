@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>LISTAR PRODUTOS</title>
+  <title>CADASTRAR PRODUTOS</title>
   <meta charset="utf-8">
 
   <script src="./scripts/jquery-3.6.0.js"></script>
@@ -109,23 +109,36 @@
             <a class="navbar-brand" href="#">Home</a>
             <a class="navbar-brand" href="#">Teste</a>
           </nav>
-          <div class="col-md-6">
-            <h3>
-              <center>Produtos</center>
-            </h3>
-            <table class="table table-striped">
-              <thead>
-                <tr class="text-center">
-                  <th>CODIGO</th>
-                  <th>DESCRIÇÃO</th>
-                  <th>CLASSE</th>
-                  <th>EXCLUIR</th>
-                </tr>
-              </thead>
-              <tbody id="grid">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <h3>
+                <center>CADASTRAR PRODUTO</center>
+              </h3>
 
-              </tbody>
-            </table>
+              <form name="formulario" autocomplete="off">
+
+                <div class="form-group">
+                  <label for="codigoInput">Codigo</label>
+                  <input type="number" class="form-control" id="codigoInput" placeholder="Digite o codigo">
+                </div>
+
+                <div class="form-group">
+                  <label for="nomeInput">Descrição</label>
+                  <input type="text" class="form-control" id="nomeInput" placeholder="Digite a descrição">
+                </div>
+
+                <div class="form-group">
+                  <label for="classeInput">Classe</label>
+                  <input type="text" class="form-control" id="classeInput" placeholder="Digite a Classe">
+                </div>
+
+
+
+
+                <button type="button" class="btn btn-primary" onclick="cadastrar()">Enviar</button>
+
+              </form>
+            </div>
           </div>
         </div>
 

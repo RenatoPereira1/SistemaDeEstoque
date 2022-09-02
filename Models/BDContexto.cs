@@ -17,7 +17,7 @@ namespace Estoque.Models
         }
 
         public virtual DbSet<EntradaProduto> EntradaProdutos { get; set; } = null!;
-        public virtual DbSet<Estoque> Estoques { get; set; } = null!;
+        public virtual DbSet<Estoquer> Estoques { get; set; } = null!;
         public virtual DbSet<Produto> Produtos { get; set; } = null!;
         public virtual DbSet<SaidaProduto> SaidaProdutos { get; set; } = null!;
 
@@ -87,7 +87,7 @@ namespace Estoque.Models
                     .HasConstraintName("fk_produto_entrada");
             });
 
-            modelBuilder.Entity<Estoque>(entity =>
+            modelBuilder.Entity<Estoquer>(entity =>
             {
                 entity.ToTable("estoque");
 

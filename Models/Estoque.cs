@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Estoque.Models
 {
-    public partial class Estoque
+    public partial class Estoquer
     {
         public int Id { get; set; }
         public int CodigoProduto { get; set; }

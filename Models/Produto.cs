@@ -8,7 +8,7 @@ namespace Estoque.Models
         public Produto()
         {
             EntradaProdutos = new HashSet<EntradaProduto>();
-            Estoques = new HashSet<Estoque>();
+            Estoques = new HashSet<Estoquer>();
             SaidaProdutos = new HashSet<SaidaProduto>();
         }
 
@@ -17,7 +17,7 @@ namespace Estoque.Models
         public string? Classe { get; set; }
 
         public virtual ICollection<EntradaProduto> EntradaProdutos { get; set; }
-        public virtual ICollection<Estoque> Estoques { get; set; }
+        public virtual ICollection<Estoquer> Estoques { get; set; }
         public virtual ICollection<SaidaProduto> SaidaProdutos { get; set; }
     }
 }
