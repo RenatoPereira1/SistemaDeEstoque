@@ -1,44 +1,112 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>LISTAR PRODUTOS</title>
-        <meta charset="utf-8">
+<head>
+  <title>LISTAR PRODUTOS</title>
+  <meta charset="utf-8">
 
-        <script src="./scripts/jquery-3.6.0.js"></script>
-        <script src="./scripts/comunicaapi.js"></script>
-        <link rel="stylesheet" href="./style/style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="./scripts/jquery-3.6.0.js"></script>
+  <script src="./scripts/comunicaapi.js"></script>
+  <link href="estilo.css" rel="stylesheet">
 
-    </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dar">
-            <a class="navbar-brand" href="#">ESTOQUE</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-              <span class="navbar-toggler-icon"></span>
+
+</head>
+
+<body>
+
+  <div class="row affix-row">
+    <div class="col-sm-3 col-md-2 affix-sidebar">
+      <div class="sidebar-nav">
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-          
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./Cadastrar.html">CADASTRAR</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Compra.html">COMPRAS/VENDAS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Consultar.html">CONSULTAR</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-              </form>
-            </div>
-        </nav>
+            <span class="visible-xs navbar-brand">UnimedGM</span>
+          </div>
+          <div class="navbar-collapse collapse sidebar-navbar-collapse">
+            <ul class="nav navbar-nav" id="sidenav01">
+              <!--<li>
+                <a href="#" data-toggle="collapse" data-target="#toggleDemo0" data-parent="#sidenav01"
+                  class="collapsed">
 
-        <div class="col-md-6">
+                  <div alingn="left" style="margin-left:50px"><img src="Views\img\logo.PNG" width="100" alt="">
+                  </div>
+
+
+
+                </a>
+              </li>-->
+              <li style="background-color:#04b439">
+
+
+                <a href="#" data-toggle="collapse" data-target="#toggleDemo" data-parent="#sidenav01"
+                  class="collapsed" style="color:#fff">
+                  <span class="glyphicon glyphicon-home" style="margin-right:6px"></span> Estoque System Enterprises
+                  
+                </a>
+
+                <div class="collapse" id="toggleDemo" style="height: 0px;">
+                </div>
+              </li>
+
+              <li><a href="Cadastrar.html"><span class="glyphicon glyphicon-inbox" style="margin-right:6px"></span>
+                Cadastro de Produtos</a></li>
+              <li><a href="listaProduto.html"><span class="glyphicon glyphicon-list-alt"
+                    style="margin-right:6px"></span> Lista de Produtos </a></li>
+
+              <!--<li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Extrato de Contas</a></li> -->
+              <li><a href="EntradaProduto.html"><span class="glyphicon glyphicon-inbox" style="margin-right:6px"></span>
+                Entrada de Produto</a></li>
+              <li><a href="extrato_mensalidade.html"><span class="glyphicon glyphicon-list-alt"></span>
+                  Relatório de Mensalidades</a></li>
+              <li><a href="notafiscal.html"><span class="glyphicon glyphicon-file" style="margin-right:6px"></span>
+                  Emissão de Notas Fiscais</a></li>
+
+              <li><a href="boletounicred.html"><span class="glyphicon glyphicon-file" style="margin-right:6px"></span>
+                  Emissão de Boleto Unicred</a></li>
+
+              <!--
+				<li>
+				  <a href="#" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav01" class="collapsed">
+				  <span class="glyphicon glyphicon-file" style="margin-right:6px"></span> Geração de Boletos<span class="caret pull-right"></span>
+				  </a>
+				  <div class="collapse" id="toggleDemo2" style="height: 0px;">
+					<ul class="nav nav-list">
+					  <li><a href="#">Postar Arquivo</a></li>
+					  <li><a href="#">Gerenciar Arquivos Postados</a></li>
+					</ul>
+				  </div>
+				</li>
+				-->
+
+
+              <li><a href="/"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-sm-8 col-md-10 affix-content">
+      <div class="container">
+        <br>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Teste</a>
+          </nav>
+          <div class="col-md-6">
             <h3>
                 <center>Produtos</center>
             </h3>
@@ -56,7 +124,13 @@
                 </tbody>
             </table>
         </div>
+        </div>
 
-    </body>
+      </div>
+    </div>
+  </div>
+
+
+</body>
 
 </html>
